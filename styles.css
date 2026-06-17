@@ -15,20 +15,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 8%;
-  background: #111;
   border-bottom: 1px solid #ff3c00;
-}
-
-header h1 {
   color: #ff3c00;
   letter-spacing: 2px;
+  background-color: #000;
+}
+
+.logo {
+  position: relative;
+  left: 50px;
+  width: 150px;
+  height: 100px;
 }
 
 nav a {
+  position: relative;
+  left: -50px;
   color: white;
   text-decoration: none;
   margin-left: 20px;
+  letter-spacing: 2px;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -36,35 +44,66 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
+  padding: 40px 8%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 8%;
-  background: linear-gradient(to right, #080808, #1a0500);
+  align-items: center;
+  background-image: url('./images/hero-image.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.eyebrow {
+  color: #ff3c00;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000;
+  font-size: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 12vw, 9rem);
+  color: #ff3c00;
+  line-height: 1;
+  text-shadow: 0 0 25px rgba(255, 60, 0, 0.7);
 }
 
 .hero h2 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  color: #ff3c00;
-  max-width: 900px;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  margin: 15px 0;
 }
 
-.hero p {
+.hero-text {
   max-width: 600px;
-  margin: 20px 0;
   font-size: 1.2rem;
+  color: #ddd;
+}
+
+.hero-buttons {
+  margin-top: 30px;
 }
 
 .btn {
   display: inline-block;
+  padding: 14px 24px;
   background: #ff3c00;
-  color: black;
-  padding: 12px 22px;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 10px;
   border-radius: 4px;
+  margin-right: 12px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ff3c00;
+  border: 1px solid #ff3c00;
 }
 
 .secondary {
@@ -99,6 +138,13 @@ section h2 {
 .card h3 {
   color: #ff3c00;
   margin-bottom: 10px;
+}
+
+.link-card {
+  background: #141414;
+  padding: 25px;
+  border: 1px solid #333;
+  border-radius: 8px;
 }
 
 footer {
