@@ -3,87 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official website of LadyBlzn, a grunge rap artist creating raw music about pain, survival, love, trauma, and rising from the ashes." />
+
+  <meta
+    name="description"
+    content="Official website of LadyBlzn, a grunge rap artist creating raw music about pain, survival, love, trauma, and rising from the ashes."
+  />
+
   <title>LadyBlzn | Official Artist Website</title>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <header>
-    <img src="./images/logo.png"alt="LadyBlzn Logo" class="logo" />
-    <nav>
+  <header class="site-header">
+    <nav class="nav">
       <a href="#about">About</a>
       <a href="#music">Music</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-  <div class="hero-content">
-    <p class="eyebrow">Official Artist Website</p>
-    <p class="hero-text">
-      Raw lyrics for the broken, the healing, and the ones still standing.
-    </p>
+  <main>
 
-    <div class="hero-buttons">
-      <a href="#music" class="btn">Listen Now</a>
-      <a href="#about" class="btn btn-outline">Enter the Flame</a>
-    </div>
-  </div>
-</section>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Official Artist Website</p>
 
-  <section id="about">
-    <h2>About LadyBlzn</h2>
-    <p>
-      LadyBlzn creates raw alternative rap and grunge-inspired music about pain,
-      survival, love, trauma, insecurity, and rising from the ashes.
-    </p>
-  </section>
+        <h1><img src="./images/logo.png" alt="LadyBlzn logo" class="logo" /></h1>
 
-  <section id="music">
-    <h2>Music</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>I Know</h3>
-        <p>A vulnerable grunge rap track about love, fear, and overthinking.</p>
-      </div>
-      <div class="card">
-        <h3>The Fog</h3>
-        <p>Dark, emotional, and heavy — survival through mental darkness.</p>
-      </div>
-      <div class="card">
-        <h3>The Flame</h3>
-        <p>The upcoming era of LadyBlzn.</p>
-      </div>
-    </div>
-    <div class="links">
-      <div class="link-card">
-        <h3>SoundCloud</h3>
-        <a href="#" class="btn">Listen on SoundCloud</a>
-      </div>
-      <div class="link-card">
-        <h3>Spotify</h3>
-        <a href="#" class="btn">Listen on Spotify</a>
-      </div>
-      <div class="link-card">
-        <h3>Apple Music</h3>
-        <a href="#" class="btn">Listen on Apple Music</a>
-      </div>
-      <div class="link-card">
-        <h3>Amazon Music</h3>
-        <a href="#" class="btn">Listen on Amazon Music</a>
-      </div>
-    </div>
-  </section>
+        <p class="hero-text">
+          Raw lyrics for the broken, the healing, and the ones still standing.
+        </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>For features, licensing, or business inquiries:</p>
-    <a href="mailto:your-email@example.com" class="btn">Email LadyBlzn</a>
-  </section>
+        <div class="hero-buttons">
+          <a href="#music" class="btn">Listen Now</a>
+          <a href="#about" class="btn btn-outline">Enter the Flame</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div id="about-ladyblzn">
+        <h2>About LadyBlzn</h2>
+
+        <p>
+          LadyBlzn creates raw alternative rap and grunge-inspired music about pain,
+          survival, love, trauma, insecurity, and rising from the ashes.
+        </p>
+
+        <p>
+          The sound is dark, honest, emotional, rebellious, and built for anyone who
+          has ever felt broken but refused to stay down.
+        </p>
+
+        <img
+          src="./images/quote-card.png"
+          alt="I don't need to fit in. I was born to stand out."
+          class="quote-img" />
+      </div>
+
+       <div class="icon-row">
+        <img src="./images/barbedWire-icon.PNG" alt="Barbed wire icon" />
+        <img src="./images/brokenHeart-icon.PNG" alt="Broken heart icon" />
+        <img src="./images/crown-icon.PNG" alt="Crown icon" />
+        <img src="./images/fire-icon.PNG" alt="Fire icon" />
+        <img src="./images/smileyFace-icon.PNG" alt="Smiley face icon" />
+      </div>
+    </section>
+
+    <section id="music" class="section">
+      <h2>Music</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>I Know</h3>
+          <p>A vulnerable grunge rap track about love, fear, and overthinking.</p>
+
+          <audio controls>
+            <source src="./audio/i know.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="card">
+          <h3>The Fog</h3>
+          <p>Dark, emotional, and heavy — survival through mental darkness.</p>
+
+           <audio controls>
+            <source src="./audio/the fog.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="card">
+          <h3>The Flame</h3>
+          <p>The upcoming era of LadyBlzn.</p>
+
+          <audio controls>
+            <source src="./audio/the flame.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="platforms">
+      <div class="music-links">
+        <h2>Listen Everywhere</h2>
+
+        <a href="https://soundcloud.com/ladyblzn" target="_blank">
+          <img src="./images/soundcloud.png" alt="SoundCloud" />
+        </a>
+
+        <a href="https://music.apple.com/us/artist/ladyblzn/1837745585" target="_blank">
+          <img src="./images/apple-music.png" alt="Apple Music" />
+        </a>
+
+        <a href="https://open.spotify.com/artist/4DJIwmZH8NmQmKleeE3sMC?si=8yGDWE1ZQ9yH6HSWVXAWyQ" target="_blank">
+          <img src="./images/spotify.png" alt="Spotify" />
+        </a>
+
+        <a href="https://www.youtube.com/@LadyBlzn" target="_blank">
+          <img src="./images/youtube.png" alt="YouTube" />
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+
+      <p>For features, licensing, or business inquiries:</p>
+
+      <a href="mailto:blzndoll_art@hotmail.com" class="btn">Email LadyBlzn</a>
+
+    </section>
+
+  </main>
 
   <footer>
     <p>© 2026 LadyBlzn. All rights reserved.</p>
+    <p>Website made by Jacqueline McRoberts</p>
+
+    <nav class="footer-links" aria-label="Legal">
+      <a href="./privacy-policy.txt">Privacy Policy</a>
+      <a href="./terms-and-conditions.txt">Terms &amp; Conditions</a>
+  </nav>
   </footer>
 
 </body>
