@@ -53,7 +53,7 @@ a {
 
 .nav a:hover,
 .nav a:focus-visible {
-  color: #ff3c00;
+  color: #8421ed;
 }
 
 /* Hero */
@@ -121,6 +121,10 @@ a {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+#email-btn {
+  width: 50%;
+}
+
 .btn:hover,
 .btn:focus-visible {
   border-color: #8421ed;
@@ -152,6 +156,7 @@ a {
 }
 
 /* Purple flames */
+
 .hero-buttons .btn::before {
   content: "";
   position: absolute;
@@ -196,6 +201,7 @@ a {
 }
 
 /* Purple glow behind the button */
+.hero-buttons #email-btn::after,
 .hero-buttons .btn::after {
   content: "";
   position: absolute;
@@ -210,8 +216,8 @@ a {
 }
 
 /* Hover and keyboard-focus effect */
-.hero-buttons .btn:hover,
-.hero-buttons .btn:focus-visible {
+.hero-buttons #email-btn:hover,
+.hero-buttons .btn:hover {
   color: #fff;
   background: #7200c9;
   border-color: #d77aff;
@@ -280,6 +286,24 @@ a {
 .section p {
   max-width: 750px;
   color: #ddd;
+}
+
+#music {
+  text-align: center;
+}
+
+#music-links {
+  text-align: center;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "quote music";
+  grid-auto-flow: row;
+  grid-template-rows: auto;
 }
 
 /* About */
@@ -362,7 +386,7 @@ a {
 
 .music-links a:hover,
 .music-links a:focus-visible {
-  border-color: #ff3c00;
+  border-color: #8421ed;
   transform: translateY(-4px);
 }
 
@@ -374,18 +398,36 @@ a {
 
 /* Contact and footer */
 
+#contact {
+  text-align: center;
+}
+
 .contact .btn {
   margin-top: 1.5rem;
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  grid-template-areas: 
+    "copyright links"
+  ;
+  grid-auto-flow: row;
   padding: 1.5rem 1.25rem;
   background: #111;
   color: #aaa;
   text-align: center;
 }
 
+.copyright {
+  grid-area: copyright;
+  font-size: 0.8rem;
+}
+
 .footer-links {
+  grid-area: links;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
